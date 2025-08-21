@@ -1,0 +1,13 @@
+name: macOS Simple Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  macos-job:
+    runs-on: macos-latest
+    steps:
+      - run: echo "Hello from macOS self-hosted"
+

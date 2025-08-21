@@ -1,0 +1,24 @@
+name: Test Artifacts
+
+on:
+  workflow_dispatch:
+
+jobs:
+  produce-artifact:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello world" > greeting.txt
+      - uses: actions/upload-artifact@v3
+        with:
+          name: hello-world
+          path: greeting.txt
+
+  consume-artifact:
+    runs-on: ubuntu-latest
+    needs: produce-artifact
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: hello-world
+          path: downloads
+      - run: ls downloads
