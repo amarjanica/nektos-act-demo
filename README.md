@@ -8,5 +8,5 @@ All of the workflows are showcased in my [Youtube guide](https://youtu.be/zuNHYi
 
 # Resources
 - Youtube guide - https://youtu.be/zuNHYiTcDJs
-- Article on nektos - https://www.amarjanica.com/
+- Article on nektos - https://www.amarjanica.com/running-local-github-actions-with-nektos-act
 - Nektos Github - https://github.com/nektos/act
